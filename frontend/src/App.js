@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
+//JSX (Javascript e XML)
 
 function App() {
+
+  /*const [counter, setCounter] = useState(0);
+
+  //retorna um array : Array[valor, functionAtualização]
+
+  function increment(){
+    setCounter(counter + 1);
+    console.log(counter);
+  }*/
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    /*<div>
+    <Header>Contador: {counter}</Header>
+    <button onClick={increment}>Incrementar</button>
     </div>
+    */
+    <Routes/>
+
   );
 }
 
